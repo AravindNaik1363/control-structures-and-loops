@@ -1,0 +1,183 @@
+1.for loop:
+
+eg1:// Print numbers from 1 to 10
+#include <stdio.h>
+
+int main() {
+  int i;
+
+  for (i = 1; i < 11; ++i)
+  {
+    printf("%d ", i);
+  }
+  return 0;
+}
+___________________________________________________________________________
+eg2:
+Also, we can skip the initial value expression, 
+condition and/or increment by adding a semicolon.
+
+For example:
+#include<stdio.h>
+int main()
+{
+int i=0;
+int max = 10;
+for (; i < max; i++)
+{
+  		printf("%d\n", i);
+	}
+	return 0;
+}
+_______________________________________________________________________________
+Eg3 of for loop:
+
+
+// Program to calculate the sum of first n natural numbers
+
+#include <stdio.h>
+int main()
+{
+    int num, count, sum = 0;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &num);
+
+    // for loop terminates when num is less than count
+    for(count = 1; count <= num; count++)
+    {
+        sum += count;
+    }
+
+    printf("Sum = %d", sum);
+
+    return 0;
+}
+*******************************************************************************
+
+2.While loop:
+eg1:
+#include <stdio.h>
+
+int main()
+{
+	// initialization expression
+	int i = 1;
+
+	// test expression
+	while (i < 6)
+	{
+		printf( “Thundersoft\n");	
+
+		// update expression
+		i++;
+	}
+
+	return 0;
+}
+_________________________________________________________________
+eg2:
+#include<stdio.h>
+int main()
+{
+	int num=1;	//initializing the variable
+	while(num<=10)	//while loop with condition
+	{
+		printf("%d\n",num);
+		num++;		//incrementing operation
+	}
+	return 0;
+}
+____________________________________________________________________
+Infinite loop:eg1
+
+#include<stdio.h>
+int main()
+{
+	while(-11)//condition is true enters loop 
+	{
+		printf(“Thundersoft\n”);
+	}
+	return 0;
+}
+______________________________________________________________________
+Infinite loop eg2:
+
+
+#include<stdio.h>
+int main()
+{
+	short int i=1;//range is from -32768 to +32767
+	while(1)//condition is true enters loop //while(i) (finite loop)
+	{
+		printf("i value :%d\n",i );
+		i++;
+	}
+	return 0;
+}
+
+______________________________________________________________________
+Infinite loop eg3
+
+#include<stdio.h>
+int main()
+{
+	signed char ch=120;//range is from -128 to +127
+	while(++ch)//condition is true enters loop 
+	{
+		printf("ch value :%d\n",ch );
+	
+	}
+	return 0;
+}
+
+
+****************************************************************************
+3.do-while loop:
+eg1:
+
+#include <stdio.h>
+
+int main()
+{
+	int i = 2; // Initialization expression
+
+	do
+	{
+		// loop body
+		printf( "Thundersoft\n");	
+
+		// update expression
+		i++;
+
+	} while (i < 1); // test expression
+
+	return 0;
+}
+__________________________________________________________________________________
+
+eg2:
+
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int num=1;	//initializing the variable
+	do	//do-while loop 
+	{
+		printf("%d\n",2*num);
+		num++;		//incrementing operation
+	}while(num<=10);
+	return 0;
+}
+______________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
